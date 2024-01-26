@@ -19,37 +19,37 @@ export const NAVBAR_ROUTES = [
   {
     title: "Home",
     path: "/",
-    icon: <HomeIcon className="w-5 h-5" />,
+    icon: <HomeIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
     title: "Work experience",
     path: "/experience",
-    icon: <BriefcaseIcon className="w-5 h-5" />,
+    icon: <BriefcaseIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
     title: "Education",
     path: "/",
-    icon: <AcademicCapIcon className="w-5 h-5" />,
+    icon: <AcademicCapIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
     title: "Projects",
     path: "/",
-    icon: <FolderOpenIcon className="w-5 h-5" />,
+    icon: <FolderOpenIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
     title: "Awards & Mentorships",
     path: "/",
-    icon: <StarIcon className="w-5 h-5" />,
+    icon: <StarIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
     title: "Stack",
     path: "/",
-    icon: <Square3Stack3DIcon className="w-5 h-5" />,
+    icon: <Square3Stack3DIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
     title: "Posts",
     path: "/",
-    icon: <ClipboardDocumentListIcon className="w-5 h-5" />,
+    icon: <ClipboardDocumentListIcon width={20} height={20} className="w-5 h-5" />,
   },
 ];
 
