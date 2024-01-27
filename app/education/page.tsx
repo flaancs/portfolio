@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Experience() {
   return (
     <MotionWrapper>
-      <div className="flex flex-col ghttps://flaancs.dev/ap-10">
+      <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-4">
           <h1 className="text-xl font-bold">Education</h1>
           {EDUCATION_EXPERIENCE.map((experience, idx) => (
