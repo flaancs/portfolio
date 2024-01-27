@@ -16,14 +16,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `flaancs.dev - ${postInfo?.title}`,
     description: postInfo?.description,
     openGraph: {
-      images: ["/images/og.png"],
+      title: `flaancs.dev - ${postInfo?.title}`,
+      description: postInfo?.description,
+      images: ["https://www.flaancs.dev/images/og.png"],
     },
   };
 }
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const source = await fs.readFile(
-    process.cwd() + `/posts/${params.slug}.md`,
+    process.cwd() + `/public/files/${params.slug}.md`,
     "utf8"
   );
   const postInfo = POSTS.find((post) => post.id === params.slug);
