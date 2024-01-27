@@ -45,7 +45,7 @@ export default function RootLayout({
                   ,{" "}
                   <Link
                     target="_blank"
-                    href="https://nextjs.org/blog/next-14"
+                    href="https://tailwindcss.com/"
                     className="hover:underline underline-offset-4"
                   >
                     TailwindCSS
@@ -53,7 +53,7 @@ export default function RootLayout({
                   ,{" "}
                   <Link
                     target="_blank"
-                    href="https://nextjs.org/blog/next-14"
+                    href="https://www.typescriptlang.org/"
                     className="hover:underline underline-offset-4"
                   >
                     Typescript
