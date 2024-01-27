@@ -3,7 +3,7 @@ import { CustomLink } from "@/components/CustomLink";
 import { MotionWrapper } from "@/components/MotionWrapper";
 import { CERTIFICATIONS, EDUCATION_EXPERIENCE } from "@/utils/constants";
 
-export default function Experience() {
+export default function Education() {
   return (
     <MotionWrapper>
       <div className="flex flex-col gap-10">

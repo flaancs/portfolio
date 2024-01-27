@@ -3,7 +3,7 @@ import { MotionWrapper } from "@/components/MotionWrapper";
 import { AWARDS, MENTORSHIPS } from "@/utils/constants";
 import { StarIcon } from "@heroicons/react/24/outline";
 
-export default function Experience() {
+export default function Awards() {
   return (
     <MotionWrapper>
       <div className="flex flex-col gap-10">

@@ -4,7 +4,7 @@ import { StackCard } from "@/components/StackCard";
 import { DiamondIcon } from "@/icons/Diamond";
 import { BACKEND_STACK, FRONTEND_STACK } from "@/utils/constants";
 
-export default function Experience() {
+export default function Stack() {
   return (
     <MotionWrapper>
       <div className="flex flex-col gap-10">
