@@ -38,6 +38,7 @@ import { VuexIcon } from "@/icons/Vuex";
 import {
   AcademicCapIcon,
   BriefcaseIcon,
+  ClipboardDocumentListIcon,
   HomeIcon,
   Square3Stack3DIcon,
   StarIcon,
@@ -59,11 +60,6 @@ export const NAVBAR_ROUTES = [
     path: "/education",
     icon: <AcademicCapIcon width={20} height={20} className="w-5 h-5" />,
   },
-  // {
-  //   title: "Projects",
-  //   path: "/",
-  //   icon: <FolderOpenIcon width={20} height={20} className="w-5 h-5" />,
-  // },
   {
     title: "Awards & mentorships",
     path: "/awards",
@@ -74,13 +70,13 @@ export const NAVBAR_ROUTES = [
     path: "/stack",
     icon: <Square3Stack3DIcon width={20} height={20} className="w-5 h-5" />,
   },
-  // {
-  //   title: "Posts",
-  //   path: "/",
-  //   icon: (
-  //     <ClipboardDocumentListIcon width={20} height={20} className="w-5 h-5" />
-  //   ),
-  // },
+  {
+    title: "Posts",
+    path: "/posts",
+    icon: (
+      <ClipboardDocumentListIcon width={20} height={20} className="w-5 h-5" />
+    ),
+  },
 ];
 
 export const NAVBAR_SOCIALS = [
@@ -644,5 +640,31 @@ export const BACKEND_STACK = [
         icon: <PytestIcon />,
       },
     ],
+  },
+];
+
+export const POSTS = [
+  {
+    id: "state_management_in_frontend_applications_redux_context_api_and_beyond",
+    title:
+      "State Management in Frontend Applications: Redux, Context API, and Beyond",
+    description:
+      "Effectively managing data is essential for applications to perform well, be easy to support, and grow gracefully",
+    readTime: "2 min read",
+  },
+  {
+    id: "building_accessible_web_applications_best_practices_and_tools",
+    title: "Building Accessible Web Applications: Best Practices and Tools",
+    description:
+      "In today’s digital landscape, ensuring that web applications are accessible to all users, regardless of their abilities or disabilities, is not just a best practice — it’s a necessity",
+    readTime: "3 min read",
+  },
+  {
+    id: "understanding_the_role_of_functions_and_arrow_functions_in_react_development",
+    title:
+      "Understanding the Role of Functions and Arrow Functions in React Development",
+    description:
+      "The importance and advantages of using function components and arrow functions within React, two practices that have become increasingly prevalent and beneficial",
+    readTime: "3 min read",
   },
 ];
