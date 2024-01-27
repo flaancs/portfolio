@@ -25,20 +25,19 @@ export default function Home() {
           <div>
             <h1 className="text-xl font-bold">About me</h1>
             <span>
-              With more than six years of rich experience in the tech industry,
-              I have honed a comprehensive skill set encompassing both frontend
-              and backend development. My career is marked by a diverse range of
-              innovative projects, showcasing my versatility and depth as a
-              Software Engineer. I am fervently motivated by the excitement of
-              overcoming new challenges and unraveling complex problems. A
-              fervent believer in lifelong learning, I continuously strive to
-              advance my skills and keep pace with cutting-edge technological
-              developments. This unwavering dedication to excellence positions
-              me as a dynamic, adaptable, and proficient professional in the
-              dynamic field of software engineering.
+              Throughout my career in the tech world, I have managed to work on
+              both the frontend and backend sides, always focusing on the best
+              practices of software engineering. I have participated in various
+              innovative projects, each one reinforcing my versatility and
+              experience. I enjoy the opportunity to immerse myself in new
+              challenges and decipher complex technical puzzles. As a dedicated
+              advocate of continuous learning, I constantly update my skill set
+              to stay in line with the latest in technology. This commitment to
+              professional excellence makes me a dynamic, adaptable, and
+              competent figure in the world of software engineering.
             </span>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-4">
             <h1 className="text-xl font-bold">Technical skills</h1>
             {TECHNICAL_SKILLS.map((skill, idx) => (
               <Card key={idx} title={skill.name}>
@@ -46,7 +45,7 @@ export default function Home() {
               </Card>
             ))}
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-4">
             <h1 className="text-xl font-bold">Soft skills</h1>
             {SOFT_SKILLS.map((skill, idx) => (
               <Card key={idx} title={skill.name}>
