@@ -1,10 +1,40 @@
-import {
-  faDev,
-  faGithub,
-  faLinkedin,
-  faMedium,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { AngularIcon } from "@/icons/Angular";
+import { ApiRestIcon } from "@/icons/ApiRest";
+import { AstroIcon } from "@/icons/Astro";
+import { CsharpIcon } from "@/icons/Csharp";
+import { CssIcon } from "@/icons/Css";
+import { CypressIcon } from "@/icons/Cypress";
+import { DevToIcon } from "@/icons/DevTo";
+import { DjangoIcon } from "@/icons/Django";
+import { ExpressIcon } from "@/icons/Express";
+import { GithubIcon } from "@/icons/Github";
+import { GraphqlIcon } from "@/icons/Graphql";
+import { HtmlIcon } from "@/icons/Html";
+import { JavaIcon } from "@/icons/Java";
+import { JavascriptIcon } from "@/icons/Javascript";
+import { JestIcon } from "@/icons/Jest";
+import { LaravelIcon } from "@/icons/Laravel";
+import { LinkedinIcon } from "@/icons/Linkedin";
+import { MediumIcon } from "@/icons/Medium";
+import { NestIcon } from "@/icons/Nest";
+import { NetCoreIcon } from "@/icons/NetCore";
+import { NextJsIcon } from "@/icons/NextJs";
+import { PhpIcon } from "@/icons/Php";
+import { PytestIcon } from "@/icons/Pytest";
+import { PythonIcon } from "@/icons/Python";
+import { ReactIcon } from "@/icons/React";
+import { ReactQueryIcon } from "@/icons/ReactQuery";
+import { ReduxIcon } from "@/icons/Redux";
+import { SassIcon } from "@/icons/Sass";
+import { SlimIcon } from "@/icons/Slim";
+import { SpringIcon } from "@/icons/Spring";
+import { StyledComponentsIcon } from "@/icons/StyledComponents";
+import { SwrIcon } from "@/icons/Swr";
+import { TailwindIcon } from "@/icons/Tailwind";
+import { TestingLibraryIcon } from "@/icons/TestingLibrary";
+import { TypescriptIcon } from "@/icons/Typescript";
+import { VueIcon } from "@/icons/Vue";
+import { VuexIcon } from "@/icons/Vuex";
 import {
   AcademicCapIcon,
   BriefcaseIcon,
@@ -38,12 +68,12 @@ export const NAVBAR_ROUTES = [
   },
   {
     title: "Awards & mentorships",
-    path: "/",
+    path: "/awards",
     icon: <StarIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
     title: "Stack",
-    path: "/",
+    path: "/stack",
     icon: <Square3Stack3DIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
@@ -59,22 +89,22 @@ export const NAVBAR_SOCIALS = [
   {
     title: "GitHub",
     path: "https://github.com/flaancs",
-    icon: <FontAwesomeIcon className="w-5 h-5" icon={faGithub} />,
+    icon: <GithubIcon width={20} height={20} />,
   },
   {
     title: "LinkedIn",
     path: "https://www.linkedin.com/in/gstvoantonio/",
-    icon: <FontAwesomeIcon className="w-5 h-5" icon={faLinkedin} />,
+    icon: <LinkedinIcon width={20} height={20} />,
   },
   {
     title: "Medium",
     path: "https://medium.com/@gustavo1998antonio",
-    icon: <FontAwesomeIcon className="w-5 h-5" icon={faMedium} />,
+    icon: <MediumIcon width={20} height={20} />,
   },
   {
     title: "Dev.to",
     path: "https://dev.to/flaancs",
-    icon: <FontAwesomeIcon className="w-5 h-5" icon={faDev} />,
+    icon: <DevToIcon width={20} height={20} />,
   },
 ];
 
@@ -364,22 +394,257 @@ export const CERTIFICATIONS = [
   },
   {
     organization: "Udemy",
-    title: "React-native without frontiers",
+    title: "React-native sin fronteras",
     date: "Jul 2022",
     credential: "http://ude.my/UC-60dbf05d-ca43-4bde-aa1c-5996b368cfb8",
   },
   {
     organization: "Platzi",
-    title: "OWASP Web Security",
+    title: "NextJS: Seguridad Web con OWASP",
     date: "Mar 2022",
     credential:
       "https://platzi.com/p/gustavo1998antonio/curso/2429-nextjs-owasp/diploma/detalle/",
   },
   {
     organization: "Udemy",
-    title:
-      "Develop web systems with ASP Net Core, SQL Server and VueJS",
+    title: "Desarrolla sistemas Web en ASP Net Core, SQL Server y VueJS",
     date: "Jun 2019",
     credential: "http://ude.my/UC-FUZBCMNO",
+  },
+];
+
+export const AWARDS = [
+  {
+    organization: "Universidad Tecnológica de Chile INACAP",
+    title: "Los genios no duermen",
+    date: "Oct 2018",
+    place: "1st place",
+    content: ["Java", "MySQL"],
+  },
+  {
+    organization: "Universidad Tecnológica de Chile INACAP",
+    title: "Los genios no duermen",
+    date: "Oct 2017",
+    place: "1st place",
+    content: ["Java"],
+  },
+  {
+    organization: "Cisco NetRiders Academy",
+    title: "NetRiders Latinoamérica y el Caribe 2017 IT Essentials",
+    date: "May 2017",
+    place: "3rd place",
+    content: ["Cisco Packet Tracer"],
+  },
+];
+
+export const MENTORSHIPS = [
+  {
+    title: "Programming 101",
+    description:
+      "I taught an introductory programming class to students interested in pursuing a degree in Computer Engineering.",
+    content: ["Pseudo code", "Databases"],
+  },
+  {
+    title: "Private Mentor",
+    description:
+      "Private programming classes where I teach from the logical base to the specialized use of modern frameworks.",
+    content: ["Python", "Django", "Javascript", "PHP", "C#"],
+  },
+];
+
+export const FRONTEND_STACK = [
+  {
+    title: "Languages",
+    items: [
+      {
+        name: "Typescript",
+        icon: <TypescriptIcon />,
+      },
+      {
+        name: "Javascript",
+        icon: <JavascriptIcon />,
+      },
+
+      {
+        name: "CSS",
+        icon: <CssIcon />,
+      },
+      {
+        name: "HTML",
+        icon: <HtmlIcon />,
+      },
+    ],
+  },
+  {
+    title: "Frameworks",
+    items: [
+      {
+        name: "NextJS",
+        icon: <NextJsIcon />,
+      },
+      {
+        name: "React",
+        icon: <ReactIcon />,
+      },
+      {
+        name: "Vue",
+        icon: <VueIcon />,
+      },
+      {
+        name: "Astro",
+        icon: <AstroIcon />,
+      },
+      {
+        name: "Angular",
+        icon: <AngularIcon />,
+      },
+    ],
+  },
+  {
+    title: "Data fetching",
+    items: [
+      {
+        name: "GraphQL",
+        icon: <GraphqlIcon />,
+      },
+      {
+        name: "React Query",
+        icon: <ReactQueryIcon />,
+      },
+      {
+        name: "SWR",
+        icon: <SwrIcon />,
+      },
+      {
+        name: "REST",
+        icon: <ApiRestIcon />,
+      },
+    ],
+  },
+  {
+    title: "Testing",
+    items: [
+      {
+        name: "Jest",
+        icon: <JestIcon />,
+      },
+      {
+        name: "Testing Library",
+        icon: <TestingLibraryIcon />,
+      },
+      {
+        name: "Cypress",
+        icon: <CypressIcon />,
+      },
+    ],
+  },
+  {
+    title: "State management",
+    items: [
+      {
+        name: "Redux",
+        icon: <ReduxIcon />,
+      },
+      {
+        name: "Vuex",
+        icon: <VuexIcon />,
+      },
+    ],
+  },
+  {
+    title: "Styling",
+    items: [
+      {
+        name: "Tailwind CSS",
+        icon: <TailwindIcon />,
+      },
+      {
+        name: "Styled Components",
+        icon: <StyledComponentsIcon />,
+      },
+      {
+        name: "SASS",
+        icon: <SassIcon />,
+      },
+    ],
+  },
+];
+
+export const BACKEND_STACK = [
+  {
+    title: "Languages",
+    items: [
+      {
+        name: "Typescript",
+        icon: <TypescriptIcon />,
+      },
+      {
+        name: "Python",
+        icon: <PythonIcon />,
+      },
+      {
+        name: "PHP",
+        icon: <PhpIcon />,
+      },
+      {
+        name: "C#",
+        icon: <CsharpIcon />,
+      },
+
+      {
+        name: "Java",
+        icon: <JavaIcon />,
+      },
+    ],
+  },
+  {
+    title: "Frameworks",
+    items: [
+      {
+        name: "Nest",
+        icon: <NestIcon />,
+      },
+      {
+        name: "Express",
+        icon: <ExpressIcon />,
+      },
+      {
+        name: "Django",
+        icon: <DjangoIcon />,
+      },
+      {
+        name: "ASP.NET Core",
+        icon: <NetCoreIcon />,
+      },
+      {
+        name: "Laravel",
+        icon: <LaravelIcon />,
+      },
+      {
+        name: "Slim Framework",
+        icon: <SlimIcon />,
+      },
+      {
+        name: "Spring",
+        icon: <SpringIcon />,
+      },
+    ],
+  },
+  {
+    title: "Testing",
+    items: [
+      {
+        name: "Jest",
+        icon: <JestIcon />,
+      },
+      {
+        name: "Cypress",
+        icon: <CypressIcon />,
+      },
+      {
+        name: "Pytest",
+        icon: <PytestIcon />,
+      },
+    ],
   },
 ];
