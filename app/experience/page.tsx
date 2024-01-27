@@ -11,7 +11,7 @@ export default function Experience() {
           <Card
             key={idx}
             title={experience.role}
-            subtitle={`${experience.company} - ${experience.dates}`}
+            subtitle={`${experience.company} ~ ${experience.dates}`}
           >
             <div className="text-sm">
               <ul className="list-inside list-disc">
