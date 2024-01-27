@@ -1,4 +1,7 @@
+"use client";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
+import classNames from "classnames";
 
 export interface NavButtonProps {
   path: string;
@@ -15,12 +18,18 @@ export function NavButton({
   target,
   onNavigate,
 }: NavButtonProps) {
+  const pathname = usePathname();
+  const linkClassName = classNames(
+    "hover:bg-gray-700 py-2 px-4 rounded flex gap-4 items-center",
+    { "bg-gray-700": pathname === path }
+  );
+
   return (
     <Link
       href={path}
       target={target}
       onClick={onNavigate}
-      className="hover:bg-gray-700 py-2 px-4 rounded flex gap-4 items-center"
+      className={linkClassName}
     >
       {icon}
       {title}
