@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { NAVBAR_ROUTES, NAVBAR_SOCIALS } from "@/utils/constants";
 import { NavButton } from "@/components/NavButton";
+import Image from "next/image";
 
 export interface NavContentProps {
   onNavigate?: () => void;

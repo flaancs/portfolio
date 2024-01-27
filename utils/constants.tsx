@@ -38,8 +38,6 @@ import { VuexIcon } from "@/icons/Vuex";
 import {
   AcademicCapIcon,
   BriefcaseIcon,
-  ClipboardDocumentListIcon,
-  FolderOpenIcon,
   HomeIcon,
   Square3Stack3DIcon,
   StarIcon,

@@ -1,11 +1,11 @@
 import { NavContent } from "@/components/NavContent";
 import { NavBottom } from "@/components/NavBottom";
 import { CustomLink } from "@/components/CustomLink";
+import { GithubIcon } from "@/icons/Github";
 import Link from "next/link";
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { GithubIcon } from "@/icons/Github";
 
 export const metadata: Metadata = {
   title: "Gustavo Lara González (Flan) ~ Software Engineer",
