@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold">Hey there 👋</h1>
             <h2 className="text-xl">I&apos;m Gustavo</h2>
             <h3 className="text-sm">
-              Also know as <span className="font-bold">Flan</span>
+              Also know as <span className="font-bold">Flan / Flaancs</span>
             </h3>
           </div>
           <div>
