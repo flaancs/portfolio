@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Gustavo Lara González (Flan) ~ Software Engineer",
   description:
     "Experienced Software Engineer specializing in both frontend and backend development. Explore my portfolio to see innovative projects, technical skills, and my journey in tackling complex challenges in the tech world.",
+  openGraph: {
+    images: ["/images/og.png"],
+  },
 };
 
 export default function RootLayout({
