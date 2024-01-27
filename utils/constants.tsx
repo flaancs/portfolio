@@ -61,11 +61,11 @@ export const NAVBAR_ROUTES = [
     path: "/education",
     icon: <AcademicCapIcon width={20} height={20} className="w-5 h-5" />,
   },
-  {
-    title: "Projects",
-    path: "/",
-    icon: <FolderOpenIcon width={20} height={20} className="w-5 h-5" />,
-  },
+  // {
+  //   title: "Projects",
+  //   path: "/",
+  //   icon: <FolderOpenIcon width={20} height={20} className="w-5 h-5" />,
+  // },
   {
     title: "Awards & mentorships",
     path: "/awards",
@@ -76,13 +76,13 @@ export const NAVBAR_ROUTES = [
     path: "/stack",
     icon: <Square3Stack3DIcon width={20} height={20} className="w-5 h-5" />,
   },
-  {
-    title: "Posts",
-    path: "/",
-    icon: (
-      <ClipboardDocumentListIcon width={20} height={20} className="w-5 h-5" />
-    ),
-  },
+  // {
+  //   title: "Posts",
+  //   path: "/",
+  //   icon: (
+  //     <ClipboardDocumentListIcon width={20} height={20} className="w-5 h-5" />
+  //   ),
+  // },
 ];
 
 export const NAVBAR_SOCIALS = [
