@@ -1,4 +1,5 @@
 import { Card } from "@/components/Card";
+import { CustomLink } from "@/components/CustomLink";
 import { MotionWrapper } from "@/components/MotionWrapper";
 import { SOFT_SKILLS, TECHNICAL_SKILLS } from "@/utils/constants";
 import Image from "next/image";
@@ -19,7 +20,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold">Hey there 👋</h1>
             <h2 className="text-xl">I&apos;m Gustavo</h2>
             <h3 className="text-sm">
-              Most know as <span className="font-bold">Flan</span>
+              Also know as <span className="font-bold">Flan</span>
             </h3>
           </div>
           <div>
@@ -36,6 +37,25 @@ export default function Home() {
               professional excellence makes me a dynamic, adaptable, and
               competent figure in the world of software engineering.
             </span>
+          </div>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-xl font-bold">Resume</h1>
+            <div className="flex gap-4">
+              <CustomLink
+                target="_blank"
+                href="/files/resume_en.pdf"
+                download="resume_en.pdf"
+              >
+                English version
+              </CustomLink>
+              <CustomLink
+                target="_blank"
+                href="/files/resume_es.pdf"
+                download="resume_es.pdf"
+              >
+                Spanish version
+              </CustomLink>
+            </div>
           </div>
           <div className="flex flex-col gap-4">
             <h1 className="text-xl font-bold">Technical skills</h1>
