@@ -27,8 +27,8 @@ export const NAVBAR_ROUTES = [
     icon: <BriefcaseIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
-    title: "Education",
-    path: "/",
+    title: "Education & certifications",
+    path: "/education",
     icon: <AcademicCapIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
@@ -37,7 +37,7 @@ export const NAVBAR_ROUTES = [
     icon: <FolderOpenIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
-    title: "Awards & Mentorships",
+    title: "Awards & mentorships",
     path: "/",
     icon: <StarIcon width={20} height={20} className="w-5 h-5" />,
   },
@@ -49,7 +49,9 @@ export const NAVBAR_ROUTES = [
   {
     title: "Posts",
     path: "/",
-    icon: <ClipboardDocumentListIcon width={20} height={20} className="w-5 h-5" />,
+    icon: (
+      <ClipboardDocumentListIcon width={20} height={20} className="w-5 h-5" />
+    ),
   },
 ];
 
@@ -249,13 +251,7 @@ export const WORK_EXPERIENCE = [
       "Ensured a high standard of frontend security, including managing web vulnerabilities and overseeing package version control.",
       "Contributed expertise to reinforce the security infrastructure, safeguarding the integrity of systems and data at Cornershop.",
     ],
-    skills: [
-      "TypeScript",
-      "Node",
-      "Javascript",
-      "React",
-      "Frontend Security",
-    ],
+    skills: ["TypeScript", "Node", "Javascript", "React", "Frontend Security"],
   },
   {
     company: "Cornershop by Uber",
@@ -267,12 +263,7 @@ export const WORK_EXPERIENCE = [
       "Gained valuable experience in backend development, particularly in the context of security.",
       "Played a crucial part in maintaining and improving the company's internal security infrastructure.",
     ],
-    skills: [
-      "Python",
-      "Django",
-      "PostgreSQL",
-      "Backend Security",
-    ],
+    skills: ["Python", "Django", "PostgreSQL", "Backend Security"],
   },
   {
     company: "Dorange SpA",
@@ -306,12 +297,89 @@ export const WORK_EXPERIENCE = [
       "Contributed to a notable project, a game celebrating the 500th anniversary of the discovery of the Strait of Magellan.",
       "Gained valuable insights into game development and backend management, applying and enhancing technical skills.",
     ],
-    skills: [
-      "C#",
-      "Unity",
-      "PHP",
-      "React Native",
-      "MySQL",
+    skills: ["C#", "Unity", "PHP", "React Native", "MySQL"],
+  },
+  {
+    company: "UNO10",
+    role: "Web Developer",
+    dates: "Jun 2017 - Feb 2018",
+    duties: [
+      "Specialized in creating innovative and fresh websites tailored to diverse client needs as a Web Developer at UNO10.",
+      "Leveraged contemporary web technologies to develop engaging, user-friendly, and visually appealing online presences.",
+      "Worked across multiple sectors, catering to the specific online needs of businesses in various industries.",
+      "Exercised creativity and technical expertise to ensure each project was uniquely crafted, aligning with clients' specific goals and brand identities.",
     ],
+    skills: ["Web Development", "PHP", "MySQL", "Wordpress"],
+  },
+];
+
+export const EDUCATION_EXPERIENCE = [
+  {
+    organization: "Universidad Tecnológica de Chile INACAP",
+    career: "Computer Engineering",
+    dates: "2019 - 2020",
+    status: "Incomplete",
+  },
+  {
+    organization: "Centro de formación técnica INACAP",
+    career: "Programmer Analyst",
+    dates: "2017 - 2019",
+    status: "Complete",
+  },
+];
+
+export const CERTIFICATIONS = [
+  {
+    organization: "Preply",
+    title: "80 Hours of English lessons",
+    date: "Feb 2023",
+    credential: "https://preply.com/en/achievement-certificate/514140",
+  },
+  {
+    organization: "EF Standard English Test (EF SET)",
+    title: "EFSET English Certificate - C1 Advanced",
+    date: "Feb 2023",
+    credential: "https://www.efset.org/cert/KXg6r9",
+  },
+  {
+    organization: "Meta",
+    title: "Version Control",
+    date: "Dec 2022",
+    credential:
+      "https://www.coursera.org/account/accomplishments/verify/S6RBRHUVUNWG",
+  },
+  {
+    organization: "Meta",
+    title: "Introduction to Front-End Development",
+    date: "Sep 2022",
+    credential:
+      "https://www.coursera.org/account/accomplishments/certificate/6S5GPCEZXCDL",
+  },
+  {
+    organization: "Meta",
+    title: "Programming with Javascript",
+    date: "Sep 2022",
+    credential:
+      "https://www.coursera.org/account/accomplishments/certificate/9SRQNXV9YLFX",
+  },
+  {
+    organization: "Udemy",
+    title: "React-native without frontiers",
+    date: "Jul 2022",
+    credential: "http://ude.my/UC-60dbf05d-ca43-4bde-aa1c-5996b368cfb8",
+  },
+  {
+    organization: "Platzi",
+    title: "OWASP Web Security",
+    date: "Mar 2022",
+    credential:
+      "https://platzi.com/p/gustavo1998antonio/curso/2429-nextjs-owasp/diploma/detalle/",
+  },
+  {
+    organization: "Udemy",
+    title:
+      "Develop web systems with ASP Net Core, SQL Server and VueJS",
+    date: "Jun 2019",
+    credential: "http://ude.my/UC-FUZBCMNO",
   },
 ];
