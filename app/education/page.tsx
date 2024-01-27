@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Experience() {
   return (
     <MotionWrapper>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col ghttps://flaancs.dev/ap-10">
         <div className="flex flex-col gap-4">
           <h1 className="text-xl font-bold">Education</h1>
           {EDUCATION_EXPERIENCE.map((experience, idx) => (
@@ -36,7 +36,7 @@ export default function Experience() {
                 <Link
                   target="_blank"
                   href={experience.credential}
-                  className="flex gap-2 items-center underline underline-offset-4"
+                  className="flex gap-2 items-center hover:underline underline-offset-4"
                 >
                   Show credential{" "}
                   <ArrowTopRightOnSquareIcon
