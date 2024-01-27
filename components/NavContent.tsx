@@ -27,7 +27,7 @@ export function NavContent({ onNavigate }: NavContentProps) {
           <NavButton key={idx} onNavigate={onNavigate} {...route} />
         ))}
       </div>
-      <div className="border-t border-gray-800 flex flex-col gap-2 py-4">
+      <div className="border-t border-gray-800 flex flex-col gap-2 py-4 mt-4 lg:mt-0">
         {NAVBAR_SOCIALS.map((route, idx) => (
           <NavButton
             target="_blank"
