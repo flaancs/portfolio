@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Gustavo Lara González (Flan) ~ Software Engineer",
@@ -26,6 +27,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`}
+      />
+      <Script strategy="lazyOnload" id="google">
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}');`}
+      </Script>
       <link rel="icon" href="/images/icon.png" sizes="any" />
       <body className="bg-gray-950 text-gray-400">
         <nav className="flex items-center lg:hidden w-full border-b bg-gray-900 border-gray-800 p-4">
