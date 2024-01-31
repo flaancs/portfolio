@@ -64,7 +64,7 @@ Sin embargo, hay situaciones en las que la complejidad cuadrática es inevitable
 
 * **Entendiendo las Limitaciones Prácticas:** Es crucial conocer el tamaño y la naturaleza de los datos de entrada. En muchos casos, un algoritmo cuadrático es perfectamente aceptable para conjuntos de datos pequeños o medianos.
 
-Uso de Recursos de Hardware: A veces, la solución no está en el algoritmo, sino en cómo y dónde se ejecuta. Utilizar recursos de hardware más potentes o técnicas de computación paralela puede hacer viable un algoritmo cuadrático.
+* **Uso de Recursos de Hardware:** A veces, la solución no está en el algoritmo, sino en cómo y dónde se ejecuta. Utilizar recursos de hardware más potentes o técnicas de computación paralela puede hacer viable un algoritmo cuadrático.
 
 ## Ejemplo: Multiplicación de Matrices en TypeScript
 ```typescript
@@ -96,4 +96,4 @@ Este ejemplo muestra un caso en el que aceptamos la complejidad cuadrática (o c
 
 En resumen, enfrentarse a operaciones cuadráticas en la programación es una oportunidad para explorar una variedad de enfoques y técnicas. Ya sea que encuentres una manera de evitar la complejidad cuadrática o aprendas a trabajar dentro de sus límites, cada desafío ofrece una oportunidad de crecimiento y aprendizaje. Y recuerda, no todas las soluciones tienen que ser perfectas; a veces, lo suficientemente bueno es exactamente lo que necesitas.
 
-### *Un gran agradecimiento a ChatGPT 4 por la ayuda en este post, desde redactar y dar ejemplos de código hasta crear la imagen.*
+#### *Un gran agradecimiento a ChatGPT 4 por la ayuda en este post, desde redactar y dar ejemplos de código hasta crear la imagen.*
