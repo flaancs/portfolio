@@ -650,6 +650,8 @@ export const POSTS = [
       "State Management in Frontend Applications: Redux, Context API, and Beyond",
     description:
       "Effectively managing data is essential for applications to perform well, be easy to support, and grow gracefully",
+    image:
+      "/images/posts/state_management_in_frontend_applications_redux_context_api_and_beyond.png",
     readTime: "2 min read",
   },
   {
@@ -657,6 +659,8 @@ export const POSTS = [
     title: "Building Accessible Web Applications: Best Practices and Tools",
     description:
       "In today’s digital landscape, ensuring that web applications are accessible to all users, regardless of their abilities or disabilities, is not just a best practice — it’s a necessity",
+    image:
+      "/images/posts/building_accessible_web_applications_best_practices_and_tools.png",
     readTime: "3 min read",
   },
   {
@@ -665,6 +669,17 @@ export const POSTS = [
       "Understanding the Role of Functions and Arrow Functions in React Development",
     description:
       "The importance and advantages of using function components and arrow functions within React, two practices that have become increasingly prevalent and beneficial",
+    image:
+      "/images/posts/understanding_the_role_of_functions_and_arrow_functions_in_react_development.png",
     readTime: "3 min read",
+  },
+  {
+    id: "desmitificando_la_complejidad_cuadratica_estrategias_y_aceptacion",
+    title: "Desmitificando la Complejidad Cuadrática: Estrategias y Aceptación",
+    description:
+      "Cuando los desarrolladores se encuentran con la necesidad de implementar un bucle dentro de otro (operaciones cuadráticas) en su código, a menudo se preguntan si hay una forma de evitar la temida complejidad O(n²).",
+    image:
+      "/images/posts/desmitificando_la_complejidad_cuadratica_estrategias_y_aceptacion.png",
+    readTime: "5 min read",
   },
 ];
