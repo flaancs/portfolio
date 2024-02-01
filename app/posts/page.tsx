@@ -14,6 +14,7 @@ export default function Posts() {
               id={post.id}
               title={post.title}
               readTime={post.readTime}
+              image={post.image}
             />
           ))}
         </div>
