@@ -46,7 +46,7 @@ export default function RootLayout({
           <aside className="hidden sticky top-0 lg:flex lg:flex-col lg:gap-4 w-[25rem] bg-gray-900 border-r border-gray-800 p-4 min-h-screen h-full">
             <NavContent />
           </aside>
-          <div className="w-full p-8">
+          <div className="w-full p-4 md:p-8">
             {children}
             <footer className="w-full mt-12 -mb-4">
               <div className="flex flex-wrap justify-between items-center">
