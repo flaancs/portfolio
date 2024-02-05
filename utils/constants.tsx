@@ -682,4 +682,32 @@ export const POSTS = [
       "/images/posts/desmitificando_la_complejidad_cuadratica_estrategias_y_aceptacion.png",
     readTime: "5 min read",
   },
+  {
+    id: "optimizacion_del_rendimiento_en_nextjs_ssr_ssg_e_isr_explicados",
+    title:
+      "Optimización del Rendimiento en Next.js: SSR, SSG, e ISR Explicados",
+    description:
+      "Next.js es un marco de trabajo React popular que permite a los desarrolladores construir aplicaciones web eficientes y de alto rendimiento. Ofrece varias estrategias de renderizado, como el renderizado del lado del servidor (SSR), la generación de sitios estáticos (SSG) y la regeneración estática incremental (ISR).",
+    image:
+      "/images/posts/optimizacion_del_rendimiento_en_nextjs_ssr_ssg_e_isr_explicados.png",
+    readTime: "6 min read",
+  },
+  {
+    id: "microfrontends_arquitectura_ventajas_y_casos_de_uso",
+    title: "Microfrontends: Arquitectura, Ventajas y Casos de Uso",
+    description:
+      "En la evolución constante del desarrollo web, la arquitectura de microfrontends ha emergido como una solución innovadora para construir aplicaciones web escalables y mantenibles. Inspirándose en los microservicios, esta arquitectura descompone el frontend en piezas más pequeñas y gestionables.",
+    image:
+      "/images/posts/microfrontends_arquitectura_ventajas_y_casos_de_uso.png",
+    readTime: "6 min read",
+  },
+  {
+    id: "estrategias_de_caching_en_el_frontend_para_mejorar_el_rendimiento",
+    title: "Estrategias de Caching en el Frontend para Mejorar el Rendimiento",
+    description:
+      "El caching en el frontend es una técnica esencial para mejorar el rendimiento de las aplicaciones web, permitiendo a los usuarios acceder a contenido más rápidamente y proporcionando una experiencia de usuario más fluida.",
+    image:
+      "/images/posts/estrategias_de_caching_en_el_frontend_para_mejorar_el_rendimiento.png",
+    readTime: "7 min read",
+  },
 ];
