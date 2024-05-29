@@ -900,7 +900,7 @@ export const PROJECTS = [
     ],
     links: [
       {
-        title: "Github frontend repository",
+        title: "Github repository",
         url: "https://github.com/flaancs/to-do",
       },
       {
