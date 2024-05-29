@@ -1,3 +1,4 @@
+import { AdobeXDIcon } from "@/icons/AdobeXD";
 import { AngularIcon } from "@/icons/Angular";
 import { ApiRestIcon } from "@/icons/ApiRest";
 import { AstroIcon } from "@/icons/Astro";
@@ -7,6 +8,7 @@ import { CypressIcon } from "@/icons/Cypress";
 import { DevToIcon } from "@/icons/DevTo";
 import { DjangoIcon } from "@/icons/Django";
 import { ExpressIcon } from "@/icons/Express";
+import { FigmaIcon } from "@/icons/Figma";
 import { GithubIcon } from "@/icons/Github";
 import { GraphqlIcon } from "@/icons/Graphql";
 import { HtmlIcon } from "@/icons/Html";
@@ -19,6 +21,7 @@ import { MediumIcon } from "@/icons/Medium";
 import { NestIcon } from "@/icons/Nest";
 import { NetCoreIcon } from "@/icons/NetCore";
 import { NextJsIcon } from "@/icons/NextJs";
+import { PhotoshopIcon } from "@/icons/Photoshop";
 import { PhpIcon } from "@/icons/Php";
 import { PytestIcon } from "@/icons/Pytest";
 import { PythonIcon } from "@/icons/Python";
@@ -39,6 +42,7 @@ import {
   AcademicCapIcon,
   BriefcaseIcon,
   ClipboardDocumentListIcon,
+  CodeBracketSquareIcon,
   HomeIcon,
   Square3Stack3DIcon,
   StarIcon,
@@ -49,6 +53,11 @@ export const NAVBAR_ROUTES = [
     title: "Home",
     path: "/",
     icon: <HomeIcon width={20} height={20} className="w-5 h-5" />,
+  },
+  {
+    title: "Projects",
+    path: "/projects",
+    icon: <CodeBracketSquareIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
     title: "Work experience",
@@ -495,6 +504,23 @@ export const FRONTEND_STACK = [
     ],
   },
   {
+    title: "Design tools",
+    items: [
+      {
+        name: "Figma",
+        icon: <FigmaIcon />,
+      },
+      {
+        name: "Adobe Xd",
+        icon: <AdobeXDIcon />,
+      },
+      {
+        name: "Photoshop",
+        icon: <PhotoshopIcon />,
+      },
+    ],
+  },
+  {
     title: "Data fetching",
     items: [
       {
@@ -709,5 +735,221 @@ export const POSTS = [
     image:
       "/images/posts/estrategias_de_caching_en_el_frontend_para_mejorar_el_rendimiento.png",
     readTime: "7 min read",
+  },
+];
+
+export const PROJECTS = [
+  {
+    image: "/images/projects/timeboost.png",
+    title: "Timeboost.ai",
+    description:
+      "TimeBoost.ai is an AI-powered social media management tool designed to help users create, schedule, and analyze content across multiple platforms. It offers automated content generation, customizable templates, seamless scheduling, and publishing capabilities. The platform supports collaboration with team features like shared content calendars, real-time feedback, and detailed analytics. It allows users to manage their social media presence efficiently, publish to various social networks, and streamline their content creation process.",
+    features: [
+      "Dark and light mode",
+      "Multi language support",
+      "Serverless architecture",
+      "RabbitMQ queue",
+      "AWS Lambda functions",
+      "AWS S3 storage",
+      "Open AI models integration (GPT-4o, GPT-4, GPT-3.5)",
+      "Google AI models integration (Gemini)",
+      "Generative UI",
+      "AI Text generation",
+      "AI Image generation",
+      "Stripe integration",
+    ],
+    stack: [
+      "Typescript",
+      "RabbitMQ",
+      "NextJS",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Turborepo",
+      "TRPC",
+      "Tanstack query",
+      "Supabase",
+      "Prisma",
+      "Vercel",
+    ],
+    links: [
+      {
+        title: "Live demo",
+        url: "https://timeboost.ai/",
+      },
+    ],
+  },
+  {
+    image: "/images/projects/ohmymenu.png",
+    title: "Ohmy.menu",
+    description:
+      "OhMyMenu is a digital menu management tool that allows restaurant owners to update their menus in real time. Users can easily change prices, update pictures, or deactivate products with just a click. The platform emphasizes features that enhance customer experience, such as using fresh, organic ingredients and offering fast delivery. The tool also showcases various menu categories like starters, main dishes, and drinks.",
+    features: [
+      "Dark and light mode",
+      "Serverless architecture",
+      "Multi language support",
+      "AWS Lambda functions",
+      "AWS S3 storage",
+      "Open AI models integration",
+      "AI Text generation",
+      "Background image remover",
+      "Stripe integration",
+    ],
+    stack: [
+      "Typescript",
+      "NextJS",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Turborepo",
+      "TRPC",
+      "Tanstack query",
+      "Supabase",
+      "Prisma",
+      "Vercel",
+    ],
+    links: [
+      {
+        title: "Live demo",
+        url: "https://ohmy.menu/",
+      },
+    ],
+  },
+  {
+    image: "/images/projects/secutransfer.png",
+    title: "Secutransfer",
+    description:
+      "SecuTransfer is a secure note-sharing tool that uses RSA cryptography to ensure end-to-end encryption. It allows users to share notes securely with options for setting expiration dates and creating one-time-use links. The platform ensures that shared content remains private and inaccessible to anyone other than the intended recipient.",
+    features: [
+      "RSA cryptography",
+      "Serverless architecture",
+      "End-to-end encryption",
+      "Automatic note expiration",
+      "One-time-use links",
+    ],
+    stack: [
+      "Typescript",
+      "NextJS",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Supabase",
+      "Prisma",
+      "Vercel",
+      "Node Crypto",
+    ],
+    links: [
+      {
+        title: "Github repository",
+        url: "https://github.com/flaancs/secutransfer",
+      },
+      {
+        title: "Live demo",
+        url: "https://secutransfer.vercel.app/",
+      },
+    ],
+  },
+  {
+    image: "/images/projects/apiuf.png",
+    title: "API UF",
+    description:
+      "API UF is a tool that allows users to check the values of the UF (Unidad de Fomento) based on a specific date. It provides a straightforward interface for querying UF values, commonly used for indexing and adjusting prices, loans, and contracts in Chile.",
+    features: [
+      "SII (Servicio de impuestos internos) scraping",
+      "Serverless architecture",
+      "Backend API",
+      "Swagger documentation",
+    ],
+    stack: ["NextJS", "Tailwind CSS", "Python", "FastAPI", "Vercel", "Swagger"],
+    links: [
+      {
+        title: "Github frontend repository",
+        url: "https://github.com/flaancs/api_uf_frontend",
+      },
+      {
+        title: "Github backend repository",
+        url: "https://github.com/flaancs/api_uf_backend",
+      },
+      {
+        title: "Live demo",
+        url: "https://api-uf-frontend.vercel.app/",
+      },
+    ],
+  },
+  {
+    image: "/images/projects/todo.png",
+    title: "Todo App",
+    description:
+      "Todo application. It features user authentication via email, GitHub, or Google. Users can sign up, log in, and manage their tasks efficiently within the app.",
+    features: [
+      "Dark and light mode",
+      "Multi language support",
+      "Serverless architecture",
+      "Github login integration",
+      "Google login integration",
+      "Optimistic UI updates",
+    ],
+    stack: [
+      "NextAuth Session",
+      "Typescript",
+      "NextJS",
+      "TRPC",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Tanstack query",
+      "Supabase",
+      "Prisma",
+      "Vercel",
+    ],
+    links: [
+      {
+        title: "Github frontend repository",
+        url: "https://github.com/flaancs/to-do",
+      },
+      {
+        title: "Live demo",
+        url: "https://to-do-alpha-three.vercel.app/",
+      },
+    ],
+  },
+  {
+    title: "Rocinante",
+    description:
+      "Rocinante is a private application designed to issue receipts in compliance with Chile's new digital receipts law. It offers seamless integration with the SII (Servicio de Impuestos Internos) to ensure all transactions meet regulatory standards. The app streamlines the process of receipt issuance, making it easier for businesses to adhere to legal requirements. As Rocinante is a private application, I can't include any photos or links.",
+    features: [
+      "SII (Servicio de impuestos internos) integration",
+      "RabbitMQ message queue",
+      "Celery task queue",
+    ],
+    stack: [
+      "ReactJS",
+      "Ant Design",
+      "Python",
+      "Django",
+      "Docker",
+      "PostgreSQL",
+      "RabbitMQ",
+      "Celery",
+    ],
+  },
+  {
+    title: "Metis",
+    description:
+      "Metis is a private application tailored for the healthcare sector, specifically managing the operations of a private clinic in Punta Arenas. It oversees all aspects, including patient records, specialities, doctor schedules, various sections, and financial operations. The app ensures streamlined and efficient management of clinic activities, contributing to improved patient care and organizational efficiency. As Metis is a private application, I can't include any photos or links.",
+    features: [
+      "Appointment scheduling",
+      "Agfa integration",
+      "PACS integration",
+      "Transbank integration (Chilean payment gateway)",
+      "DICOM viewer",
+      "Patient records",
+      "Doctor schedules",
+      "Financial operations",
+    ],
+    stack: [
+      "VueJS",
+      "Vuetify",
+      "C#",
+      "ASP.NET Core",
+      "SQL Server",
+      "Mirth Connect",
+    ],
   },
 ];

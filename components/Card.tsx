@@ -33,10 +33,10 @@ export function Card({
       <div className="mt-2">{children}</div>
     </button>
   ) : (
-    <div className={cardClassName} onClick={onClick}>
-      <p className={cardTitleClassName}>{title}</p>
-      <p className="font-semibold text-xs">{subtitle}</p>
-      <div className="mt-2">{children}</div>
+    <div className={`flex flex-col gap-2 ${cardClassName}`} onClick={onClick}>
+      {title && <p className={cardTitleClassName}>{title}</p>}
+      {subtitle && <p className="font-semibold text-xs">{subtitle}</p>}
+      <div>{children}</div>
     </div>
   );
 }

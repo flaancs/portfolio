@@ -46,14 +46,7 @@ export default function Home() {
                 href="/files/resume_en.pdf"
                 download="resume_en.pdf"
               >
-                English version
-              </CustomLink>
-              <CustomLink
-                target="_blank"
-                href="/files/resume_es.pdf"
-                download="resume_es.pdf"
-              >
-                Spanish version
+                Download my resume
               </CustomLink>
             </div>
           </div>
