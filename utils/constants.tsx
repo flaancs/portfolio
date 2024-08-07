@@ -80,8 +80,8 @@ export const NAVBAR_ROUTES = [
     icon: <Square3Stack3DIcon width={20} height={20} className="w-5 h-5" />,
   },
   {
-    title: "Posts",
-    path: "/posts",
+    title: "Blog",
+    path: "https://blog.flaancs.dev",
     icon: (
       <ClipboardDocumentListIcon width={20} height={20} className="w-5 h-5" />
     ),
@@ -98,6 +98,11 @@ export const NAVBAR_SOCIALS = [
     title: "LinkedIn",
     path: "https://www.linkedin.com/in/gstvoantonio/",
     icon: <LinkedinIcon width={20} height={20} />,
+  },
+  {
+    title: "Blog",
+    path: "https://blog.flaancs.dev",
+    icon: <ClipboardDocumentListIcon width={20} height={20} />,
   },
   {
     title: "Medium",
